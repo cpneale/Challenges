@@ -47,7 +47,7 @@
     <Compile Include="NetDev\GetStairCaseString.cs" />
     <Compile Include="NetDev\ContainsUniqueChars.cs" />
     <Compile Include="NetDev\GetGraphString.cs" />
-    <Compile Include="NetDev\InverseCaptcha.cs" />
+    <Compile Include="General\AdventOfCode.cs" />
     <Compile Include="NetDev\ReverseString.cs" />
     <Compile Include="NetDev\ReverseStringWithBuilder.cs" />
     <Compile Include="NetDev\ReverseStringFlashy.cs" />
