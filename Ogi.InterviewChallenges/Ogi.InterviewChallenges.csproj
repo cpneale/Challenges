@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NetDev\RotateString.cs" />
+    <Compile Include="NetDev\GetStairCaseString.cs" />
+    <Compile Include="NetDev\ContainsUniqueChars.cs" />
+    <Compile Include="NetDev\GetGraphString.cs" />
+    <Compile Include="NetDev\InverseCaptcha.cs" />
+    <Compile Include="NetDev\ReverseString.cs" />
+    <Compile Include="NetDev\ReverseStringWithBuilder.cs" />
+    <Compile Include="NetDev\ReverseStringFlashy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
