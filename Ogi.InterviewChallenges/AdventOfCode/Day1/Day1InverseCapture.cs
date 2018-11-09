@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Ogi.InterviewChallenges.General
+namespace Ogi.InterviewChallenges.AdventOfCode
 {
-    public static class AdventOfCode
+    public static class Day1InverseCapture
     {      
         //from https://adventofcode.com/2017/day/1
         //in progress

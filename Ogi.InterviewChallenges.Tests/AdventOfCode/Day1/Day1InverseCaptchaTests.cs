@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ogi.InterviewChallenges.General;
+using Ogi.InterviewChallenges.AdventOfCode;
 
 namespace Ogi.InterviewChallenges.Tests.General
 {
-    public class AdventOfCodeTests
+    public class Day1InverseCaptchaTests
     {
 
         [DataTestMethod]
@@ -13,7 +13,7 @@ namespace Ogi.InterviewChallenges.Tests.General
         [DataRow("91212129", 9)]
         public void InverseCaptchaTest(string key, int expectedResult)
         {
-                Assert.AreEqual(expectedResult, AdventOfCode.InverseCaptcha(key));
+                Assert.AreEqual(expectedResult, Day1InverseCapture.InverseCaptcha(key));
         }
 
         [DataTestMethod]
@@ -24,8 +24,7 @@ namespace Ogi.InterviewChallenges.Tests.General
         [DataRow("12131415", 0.5, 4)]
         public void InverseCaptchaWithLookaheadFactorTest(string key, double lookAheadFactor, int expectedResult)
         {
-            Assert.AreEqual(expectedResult, AdventOfCode.InverseCaptcha(key, lookAheadFactor));
+            Assert.AreEqual(expectedResult, Day1InverseCapture.InverseCaptcha(key, lookAheadFactor));
         }
-
     }
 }
