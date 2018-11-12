@@ -1,17 +1,19 @@
-﻿using Ogi.InterviewChallenges.AdventOfCode.Factories;
-
-namespace Ogi.InterviewChallenges.AdventOfCode.Day2
+﻿namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 {
     public class Day2CheckSum
     {
+        private IElfSpreadsheet _spreadSheet;
+
+        public Day2CheckSum(IElfSpreadsheet spreadsheet)
+        {
+            _spreadSheet = spreadsheet;
+        }
 
         public int CalculateCheckSum(string fileLocation)
         {
-            IElfSpreadsheet spreadSheet = new ElfSpreadsheet(new DefaultElfSpreadsheetRowFactory());//should really inject this but cba
+            _spreadSheet.Open(fileLocation);
 
-            spreadSheet.Open(fileLocation);
-
-            return spreadSheet.CalculateCheckSum();
+            return _spreadSheet.CalculateCheckSum();
         }
     }
 }

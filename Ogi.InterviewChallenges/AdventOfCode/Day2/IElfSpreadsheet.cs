@@ -2,7 +2,7 @@
 
 namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 {
-    internal interface IElfSpreadsheet
+    public interface IElfSpreadsheet
     {
         IEnumerable<ElfSpreadsheetRow> Rows { get; set; }
 

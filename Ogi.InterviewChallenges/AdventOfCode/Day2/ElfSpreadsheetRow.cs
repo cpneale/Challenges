@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 {
-    internal class ElfSpreadsheetRow
+    public class ElfSpreadsheetRow
     {
         public string Data { get; set; }
 
