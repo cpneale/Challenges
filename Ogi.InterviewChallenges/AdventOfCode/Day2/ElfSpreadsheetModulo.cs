@@ -5,14 +5,14 @@ using System.Linq;
 
 namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 {
-    internal class ElfSpreadsheet : IElfSpreadsheet
+    internal class ElfSpreadsheetModulo : IElfSpreadsheet
     {
         private IElfSpreadsheetRowFactory _rowFactory;
 
         public IEnumerable<IElfSpreadsheetRow> Rows { get; set; }
 
 
-        public ElfSpreadsheet(IElfSpreadsheetRowFactory rowFactory)
+        public ElfSpreadsheetModulo(IElfSpreadsheetRowFactory rowFactory)
         {
             _rowFactory = rowFactory;
         }
@@ -24,7 +24,7 @@ namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 
             var lines = File.ReadAllLines(fileLocation);
 
-            Rows = _rowFactory.Create<ElfSpreadsheetRow>(lines);
+            Rows = _rowFactory.Create<ElfSpreadsheetRowModulo>(lines);
         }
 
         public int CalculateCheckSum()

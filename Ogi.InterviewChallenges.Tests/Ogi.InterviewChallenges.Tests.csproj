@@ -71,8 +71,10 @@
   <ItemGroup>
     <Compile Include="AdventOfCode\Day1\Day1InverseCaptchaTests.cs" />
     <Compile Include="AdventOfCode\Day2\Day2CheckSumTests.cs" />
+    <Compile Include="AdventOfCode\Day2\ElfSpreadsheetRowModuloTests.cs" />
     <Compile Include="AdventOfCode\Day2\ElfSpreadsheetTests.cs" />
     <Compile Include="AdventOfCode\Day2\ElfSpreadsheetRowTests.cs" />
+    <Compile Include="AdventOfCode\Day2\ElfSpreadsheetModuloTests.cs" />
     <Compile Include="AdventOfCode\Factories\GivenADefaultElfRowFactory.cs" />
     <Compile Include="NetDev\StaticTestMethodsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

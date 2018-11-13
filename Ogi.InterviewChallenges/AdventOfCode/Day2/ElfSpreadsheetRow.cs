@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Ogi.InterviewChallenges.AdventOfCode.Day2
 {
-    public class ElfSpreadsheetRow
+    public class ElfSpreadsheetRow : IElfSpreadsheetRow
     {
         public string Data { get; set; }
 
@@ -33,6 +33,11 @@ namespace Ogi.InterviewChallenges.AdventOfCode.Day2
             rslt = Data.Split('\t').Select(d => int.TryParse(d, out int x) ? x : 0).Min();
 
             return rslt;
+        }
+
+        public int GetRowCheckSum()
+        {
+            return GetRowValueHigh() - GetRowValueLow();
         }
     }
 }

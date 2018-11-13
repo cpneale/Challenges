@@ -21,15 +21,29 @@ namespace Ogi.InterviewChallenges.Tests.AdventOfCode.Factories
             };
         }
 
+        //[DataTestMethod]
+        //[DataRow(CheckSumAlgorithm.FullRow)]
+        //[DataRow(CheckSumAlgorithm.Modulo)]
+        //public void WhenCreateIsCalled_ThenItReturnsTheCorrectObject(CheckSumAlgorithm algorithmType)
+        //{
+        //    DefaultElfSpreadsheetRowFactory sut = new DefaultElfSpreadsheetRowFactory();
+
+        //    var rows = sut.Create(_rows, algorithmType);
+
+        //    Assert.IsInstanceOfType(rows, typeof(IEnumerable<IElfSpreadsheetRow>));
+        //    Assert.AreEqual(rows.Count(), _rows.Count);
+        //}
+
         [TestMethod]
         public void WhenCreateIsCalled_ThenItReturnsTheCorrectObject()
         {
             DefaultElfSpreadsheetRowFactory sut = new DefaultElfSpreadsheetRowFactory();
 
-            var rows = sut.Create(_rows);
+            var rows = sut.Create<ElfSpreadsheetRow>(_rows);
 
-            Assert.IsInstanceOfType(rows, typeof(IEnumerable<ElfSpreadsheetRow>));
+            Assert.IsInstanceOfType(rows, typeof(IEnumerable<IElfSpreadsheetRow>));
             Assert.AreEqual(rows.Count(), _rows.Count);
+            Assert.IsTrue(rows.All(r => r.Data != null));
         }
     }
 }

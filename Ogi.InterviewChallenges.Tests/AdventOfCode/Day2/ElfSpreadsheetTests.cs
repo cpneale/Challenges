@@ -34,7 +34,7 @@ namespace Ogi.InterviewChallenges.Tests.AdventOfCode
             };
 
             _mockFactory = new Mock<IElfSpreadsheetRowFactory>();
-            _mockFactory.Setup(x => x.Create(It.IsAny<IEnumerable<string>>())).Returns(_rows);
+            _mockFactory.Setup(x => x.Create<ElfSpreadsheetRow>(It.IsAny<IEnumerable<string>>())).Returns(_rows);
             _spreadSheet = new ElfSpreadsheet(_mockFactory.Object);
         }
 
