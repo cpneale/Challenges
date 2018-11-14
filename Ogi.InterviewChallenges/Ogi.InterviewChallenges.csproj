@@ -57,9 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdventOfCode\Day2\Day2CheckSum.cs" />
+    <Compile Include="AdventOfCode\Day2\ElfSpreadsheetModulo.cs" />
     <Compile Include="AdventOfCode\Day2\ElfSpreadsheet.cs" />
+    <Compile Include="AdventOfCode\Day2\ElfSpreadsheetRowModulo.cs" />
     <Compile Include="AdventOfCode\Day2\ElfSpreadsheetRow.cs" />
     <Compile Include="AdventOfCode\Day2\IElfSpreadsheet.cs" />
+    <Compile Include="AdventOfCode\Day2\IElfSpreadsheetRow.cs" />
+    <Compile Include="AdventOfCode\Enums\CheckSumAlgorithms.cs" />
     <Compile Include="AdventOfCode\Factories\ElfSpreadsheetRowFactory.cs" />
     <Compile Include="NetDev\RotateString.cs" />
     <Compile Include="NetDev\GetStairCaseString.cs" />

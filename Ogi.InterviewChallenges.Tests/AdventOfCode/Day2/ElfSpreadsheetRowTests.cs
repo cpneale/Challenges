@@ -22,5 +22,13 @@ namespace Ogi.InterviewChallenges.Tests.AdventOfCode.Day2
             var lowValue = sut.GetRowValueLow();
             Assert.AreEqual(3350, lowValue);
         }
+
+        [TestMethod]
+        public void WhenGetRowCheckSumIsCalled_ThenItReturnsTheCorrectValue()
+        {
+            ElfSpreadsheetRow sut = new ElfSpreadsheetRow("4347\t3350");
+            var rowCheckSum = sut.GetRowCheckSum();
+            Assert.AreEqual(4347-3350, rowCheckSum);
+        }
     }
 }
